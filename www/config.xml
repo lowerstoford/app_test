@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "co.uk.lowerstoford.app_test"
+        versionCode = "10" 
+        version     = "0.0.1" >
+
+    <!-- versionCode is optional and Android only -->
+
+    <name>Test App</name>
+
+    <description>
+        This is an App to test things 
+    </description>
+
+    <author href="https://lowerstoford.co.uk" email="lee@lowerstoford.co.uk">
+        Lee Gilham 
+    </author>
+
+</widget>
