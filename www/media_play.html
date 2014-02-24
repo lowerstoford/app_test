@@ -1,10 +1,10 @@
  <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
-                  "http://www.w3.org/TR/html4/strict.dtd">
+                          "http://www.w3.org/TR/html4/strict.dtd">
     <html>
       <head>
         <title>Media Example</title>
 
-        <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+        <script type="text/javascript" charset="utf-8" src="cordova-x.x.x.js"></script>
         <script type="text/javascript" charset="utf-8">
 
         // Wait for device API libraries to load
@@ -14,7 +14,7 @@
         // device APIs are available
         //
         function onDeviceReady() {
-            playAudio("siren.mp3");
+            playAudio("http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3");
         }
 
         // Audio player
@@ -25,9 +25,10 @@
         // Play audio
         //
         function playAudio(src) {
-            // Create Media object from src
-            my_media = new Media(src, onSuccess, onError);
-
+            if (my_media == null) {
+                // Create Media object from src
+                my_media = new Media(src, onSuccess, onError);
+            } // else play current audio
             // Play audio
             my_media.play();
 
@@ -92,7 +93,7 @@
         </script>
       </head>
       <body>
-        <a href="#" class="btn large" onclick="playAudio('siren.mp3');">Play Audio</a>
+        <a href="#" class="btn large" onclick="playAudio('http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3');">Play Audio</a>
         <a href="#" class="btn large" onclick="pauseAudio();">Pause Playing Audio</a>
         <a href="#" class="btn large" onclick="stopAudio();">Stop Playing Audio</a>
         <p id="audio_position"></p>
