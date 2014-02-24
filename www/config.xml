@@ -13,10 +13,11 @@
         This is an App to test things 
     </description>
 
-    <author href="https://lowerstoford.co.uk" email="lee@lowerstoford.co.uk">
+    <author href="http://lowerstoford.co.uk" email="lee@lowerstoford.co.uk">
         Lee Gilham 
     </author>
 	
 	<gap:plugin name="com.phonegap.plugins.barcodescanner" />
+	<gap:plugin name="Media" value="org.apache.cordova.AudioHandler" />
 
 </widget>
